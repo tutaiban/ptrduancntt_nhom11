@@ -1,0 +1,317 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #e60012;
+    color: #fff;
+    padding: 10px 10px;
+}
+
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 200px;
+    padding-left: 26px;
+}
+
+.menu-container {
+    position: relative;
+    display: inline-block;
+}
+
+.menu-button {
+    background-color: #732323; /* Màu đỏ */
+    color: white;
+    padding: 10px 5px;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+    font-size: 16px;
+    display: flex;
+    
+}
+.menu-button img{
+    align-items: center;
+    width: 15px;
+   
+}
+
+.menu-button:hover {
+    background-color: #d00000; /* Màu đỏ nhạt khi hover */
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    min-width: 300px;
+    border-radius: 5px;
+    align-items: center;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+/* Hiển thị menu khi di chuột vào container */
+.menu-container:hover .dropdown-content {
+    display: block;
+}
+
+.search-bar {
+    padding-right: 20px;
+    display: flex;
+    align-items: center;
+    width: 50%;
+}
+
+.search-bar input {
+    width: 100%;
+    padding: 8px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+}
+
+.search-bar button {
+    background-color: transparent;
+    border: none;
+    margin-left: -40px;
+    cursor: pointer;
+}
+
+.search-bar button img {
+    width: 20px;
+}
+
+.icons img {
+    width: 30px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+.icons img:hover{
+    background-color: #ebb2b7;
+    border-radius: 5px;
+}
+/* Modal styling */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: rgb(165, 73, 73);
+    padding: 20px;
+    border-radius: 10px;
+    width: 400px;
+    text-align: center;
+}
+
+.modal-content h2 {
+    margin-bottom: 20px;
+}
+
+.modal-content input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.modal-content button {
+    padding: 10px 20px;
+    background-color: #e60012;
+    color: rgb(47, 45, 45);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.modal-content p {
+    margin-top: 10px;
+}
+
+.close {
+    float: right;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+
+.service p {
+    font-size: 14px;
+    color: #333;
+}
+/*-----------------------sp--------------*/
+h2{
+    padding: 5px 30px;
+}
+.motachitiet {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px; /* Khoảng cách giữa các ô */
+    padding: 20px;
+    background-color: #f1eeee;
+}
+
+.mota-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+.mota-link:hover .mota {
+    background-color: #f9f9f9; /* Tùy chỉnh màu nền khi hover */
+}
+
+.mota {
+    background-color: #fff;
+    padding: 15px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box; 
+}
+.mota:hover{
+    background-color: #e8d8d8;
+}
+.mota img {
+    width: 150px;
+    height: auto;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease;
+}
+
+.mota img:hover {
+    transform: scale(1.2); /* Phóng to 120% */
+}
+.mota h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.price {
+    color: #e60012;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.old-price {
+    text-decoration: line-through;
+    color: #888;
+}
+
+.discount {
+    color: green;
+    margin-bottom: 10px;
+}
+
+.mota button {
+    background-color: #41a0ff;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.mota button:hover {
+    background-color: #f04242;
+}
+
+
+/*-----------------------------footer -------------------*/
+footer{
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+.foot1 {
+    color: #fff;
+    text-align: center;
+    padding: 0px 0;
+    margin-top: 20px;
+}
+.foot2 {
+    color: #fff;
+    padding: 10px 0;
+    margin-top: 20px;
+    padding-left: 40px;
+}
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-column {
+    width: 22%;
+}
+
+.footer-column h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.footer-column p, .footer-column ul, .footer-column li {
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+.footer-column ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-column ul li a:hover {
+    text-decoration: underline;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: space-around;
+    width: 60%;
+}
+
+.social-icons img {
+    width: 30px;
+    height: 30px;
+}

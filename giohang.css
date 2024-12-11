@@ -1,0 +1,162 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+.container .header{
+    margin-bottom: 10px;
+}
+.empty-cart {
+    width: 95%;
+    max-width: 1600px; 
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    
+    background-color: #eee9e9;
+    border-radius: 15px;
+}
+
+.empty-cart-content {
+    text-align: left;
+    padding-right: 20px;
+}
+
+.empty-cart-content h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+.empty-cart-content p {
+    font-size: 16px;
+    color: #777;
+    margin-bottom: 20px;
+}
+
+.buy-now {
+    background-color: #e02020;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.buy-now:hover {
+    background-color: #c81b1b;
+}
+
+.empty-cart-image img {
+    width: 300px;
+    height: auto;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: space-around;
+    width: 60%;
+}
+
+.social-icons img {
+    width: 30px;
+    height: 30px;
+}
+body {  
+    font-family: Arial, sans-serif;  
+    background-color: #f5f5f5;  
+    margin: 0;  
+    padding: 20px;  
+}  
+
+.cart {  
+    background-color: #ffffff;  
+    border-radius: 8px;  
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);  
+    padding: 20px;  
+}  
+
+.cart-header h2 {  
+    line-height: 50px;  
+}  
+
+.item {  
+    display: flex;  
+    margin-left: 50px;
+    justify-content: space-between;  
+    align-items: center;  
+    padding: 15px 0;  
+    border-bottom: 1px solid #e0e0e0;  
+}  
+
+.item-info {  
+    flex: 1;  
+}  
+
+.item-price {  
+    text-align: left;  
+    display: flex;
+    margin-right: 80px;
+}  
+
+.current-price {  
+    font-size: 24px;  
+    line-height: 80px;
+    color: #e53935;  
+}  
+
+.original-price {  
+    text-decoration: line-through;  
+    color: #999;  
+    line-height: 80px;
+}  
+
+.quantity {  
+    display: flex;  
+    margin-right: 20px;
+    align-items: center;  
+    justify-content: flex-end;  
+}  
+
+.quantity button {  
+    margin: 0 5px;  
+    width: 15px;
+}  
+
+.remove {  
+    margin-left: 10px;
+    background: none;  
+    border: none;  
+    color: #e53935;  
+    cursor: pointer;  
+}  
+
+.cart-summary {  
+    margin-top: 40px;  
+    margin-left: 50px;
+}  
+
+.cart-summary h3 {  
+    margin: 0;  
+}  
+
+.cart-summary div {  
+    margin: 10px 0;  
+}  
+
+.confirm {  
+    background-color: #e53935;  
+    color: #ffffff;  
+    border: none;  
+    padding: 10px 20px;  
+    border-radius: 5px;  
+    cursor: pointer;  
+}
